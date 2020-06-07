@@ -13,4 +13,6 @@
     li.textContent = selectedColors;
     document.querySelector("ul").appendChild(li);
   });
+
+  $("h1").hide();
 }
