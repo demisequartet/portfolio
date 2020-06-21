@@ -1,13 +1,7 @@
 "use strict";
 
 {
-  const btn = document.getElementById("btn");
+  var btn = document.getElementsByClassName("extiw");
 
-  btn.addEventListener("click", () => {
-    const results = ["大吉", "中吉", "凶"];
-    const n = Math.floor(Math.random() * results.length);
-    // btn.textContent = n;
-
-    btn.textContent = results[n];
-  });
+  console.log(btn.textContent);
 }

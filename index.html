@@ -3,34 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>クソゲー</title>
+    <title>作ったもの</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>ひとつだけ押すと「win」のタイルがある！ それを見つけるのだ！</h1>
-    <script>
-      "use strict";
-
-      const num = 50;
-      const winner = Math.floor(Math.random() * num);
-
-      for (let i = 0; i < num; i++) {
-        const div = document.createElement("div");
-
-        div.classList.add("box");
-
-        div.addEventListener("click", () => {
-          if (i === winner) {
-            div.textContent = "win";
-            div.classList.add("win");
-          } else {
-            div.textContent = "lose";
-            div.classList.add("lose");
-          }
-        });
-
-        document.body.appendChild(div);
-      }
-    </script>
+    <div class="logo"><img src="img/logo.png" /></div>
+    <div class="wrapper">
+      <a href="omikuzi/index.html" class="app">CSSでFizz Buzz</a>
+    </div>
   </body>
 </html>
